@@ -43,7 +43,8 @@ INSTALLED_APPS = [
 ]
 
 SYSTEM_APPS = [
-    'jobs'
+    'jobs',
+    'blog',
 ]
 
 INSTALLED_APPS += SYSTEM_APPS
@@ -132,5 +133,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT =  os.path.join(BASE_DIR,'MEDIA')
+MEDIA_ROOT =   os.path.join(os.path.join(BASE_DIR,'MEDIA'))
 MEDIA_URL = '/media/'
